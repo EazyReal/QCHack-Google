@@ -27,4 +27,5 @@ def matrix_to_sycamore_operations(
                 an empty list.
         .
     """
-    return NotImplemented, []
+    return [cirq.PhasedXZGate(x_exponent=0, z_exponent=0, axis_phase_exponent=0)(target_qubits[0]),
+            cirq.PhasedXZGate(x_exponent=0, z_exponent=0, axis_phase_exponent=0)(target_qubits[0])], []
